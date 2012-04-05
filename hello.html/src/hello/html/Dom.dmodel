@@ -1,0 +1,28 @@
+package hello.html.dom {
+	
+	/**
+	 * An Html DOM Element
+	 */
+	entity Node {
+		contents : java.util.List<Node>
+		op tagName() : String {
+			class.simpleName.toLowerCase
+		}
+	}
+	entity Html extends Node{}
+	entity Head extends Node{}
+	entity Title extends Node{}
+	
+	entity ContentNode extends Node {}
+	entity Body extends ContentNode{}
+	entity P extends ContentNode{}
+	entity B extends ContentNode{}
+	entity H1 extends ContentNode{}
+	entity H2 extends ContentNode{}
+	entity A extends ContentNode{
+		href : String
+	}
+	entity Contents extends ContentNode {
+		text : CharSequence
+	}
+}

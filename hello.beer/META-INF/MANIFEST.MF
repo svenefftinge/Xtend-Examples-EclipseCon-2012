@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: my-java-project
+Bundle-SymbolicName: hello.beer
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.junit;bundle-version="4.8.2"
+
